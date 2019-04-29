@@ -10,20 +10,36 @@ namespace LeetCode.Easy
     {
         public static int StrStr(string haystack, string needle)
         {
-            bool isStillEqual = true;
-            for (int i = 0; i < haystack.Length; i++)
+            Console.WriteLine("needle.lenght : "+needle.Length);
+            if (string.IsNullOrEmpty(needle))
             {
-                for (int j = 0; j < needle.Length; j++)
-                {
-                    if (haystack[i] == needle[i])
-                    {
-
-                    }                    
-                }
-                
+                return 0;
             }
 
-            return 0;
+            int count = 0;
+            for (int i = 0; i < haystack.Length-needle.Length+1; i++)
+            {
+                for (int j= 0; j < needle.Length; j++)
+                {
+                    if (haystack[j+i]==needle[j])
+                    {
+                        count++;
+                        Console.WriteLine();
+                    }
+                    else
+                    {
+                        count = 0;
+                        break;
+                    }
+                    if (count == needle.Length)
+                    {
+                        Console.WriteLine("count erteke, talalt elott: " + count);
+                        return i;
+                    }
+                }                
+            }
+            Console.WriteLine("count erteke, ha nem talalt: "+count);
+            return -1;
         }
     }
 }
