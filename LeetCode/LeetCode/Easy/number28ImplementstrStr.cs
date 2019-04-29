@@ -33,7 +33,8 @@ namespace LeetCode.Easy
                     }
                     if (count == needle.Length)
                     {
-                        Console.WriteLine("count erteke, talalt elott: " + count);
+                        Console.WriteLine("count erteke, talalt elott. " +
+                            "Ami, ha megegyezik needle-lenght-tel, akkor talalt: " + count);
                         return i;
                     }
                 }                
