@@ -11,7 +11,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-
+            #region number28
+            /*
             try
             {
                 int poz = number28ImplementstrStr.StrStr("babba", "bbb");
@@ -21,7 +22,19 @@ namespace LeetCode
             {
                 Console.WriteLine(e.Message);
             }
-            
+            */
+            #endregion
+
+            #region number01
+            int[] nums = new int[2] {3,3};
+
+            int[] TwoSum = number01TwoSum.TwoSumHashTable(nums,6);
+            foreach (int items in TwoSum)
+            {
+                Console.WriteLine("Elemek :"+ items);
+            }
+
+            #endregion
         }
     }
 }
