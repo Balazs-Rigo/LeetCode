@@ -26,5 +26,12 @@ namespace LeetCode.UnitTests.Easy
 
             Assert.That(result, Is.EqualTo(2));
         }
+
+        [Test]
+        public void StrStr_SecondArgIsNllOrEmpty_ThrowsArgumentNullException()
+        {
+            Assert.That(() => number28ImplementstrStr.
+            StrStr("randomText", ""), Throws.ArgumentNullException);
+        }
     }
 }

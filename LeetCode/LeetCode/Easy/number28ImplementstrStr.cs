@@ -13,7 +13,7 @@ namespace LeetCode.Easy
             Console.WriteLine("needle.lenght : "+needle.Length);
             if (string.IsNullOrEmpty(needle))
             {
-                return 0;
+                throw new ArgumentNullException();
             }
 
             int count = 0;
