@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LeetCode.Easy
 {
-    class number01TwoSum
+    public class number01TwoSum
     {
         public static int[] TwoSum(int[] nums, int target)
         {
@@ -45,7 +45,7 @@ namespace LeetCode.Easy
             throw new ArgumentException("No two sum solution");
         }
 
-        public int[] TwoSumOnePassDictionary(int[] nums, int target)
+        public static int[] TwoSumOnePassDictionary(int[] nums, int target)
         {
             int[] result = new int[2];
             Dictionary<int, int> dict = new Dictionary<int, int>();

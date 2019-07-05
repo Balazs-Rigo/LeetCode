@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeetCode.Easy
 {
-    class number28ImplementstrStr
+   public class number28ImplementstrStr
     {
         public static int StrStr(string haystack, string needle)
         {

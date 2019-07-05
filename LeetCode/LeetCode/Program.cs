@@ -26,6 +26,7 @@ namespace LeetCode
             #endregion
 
             #region number01
+            /*
             int[] nums = new int[2] {3,3};
 
             int[] TwoSum = number01TwoSum.TwoSumHashTable(nums,6);
@@ -33,7 +34,11 @@ namespace LeetCode
             {
                 Console.WriteLine("Elemek :"+ items);
             }
+            */
+            #endregion
 
+            #region number07
+            Console.WriteLine(number07ReverseInteger.Reverse(597));
             #endregion
         }
     }
