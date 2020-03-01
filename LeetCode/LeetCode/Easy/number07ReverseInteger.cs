@@ -34,5 +34,20 @@ namespace LeetCode.Easy
             return int.Parse(sb.ToString());
           
         }
+
+        public static int Reverse2(int number)
+        {
+            int reverse = 0;
+            var stringBuilder = new StringBuilder();
+
+            while (number > 0)
+            {
+                reverse = number % 10;
+                stringBuilder.Append(reverse);
+                Console.Write(reverse);
+                number = number / 10;
+            }
+            return int.Parse(stringBuilder.ToString());
+        }
     }
 }

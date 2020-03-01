@@ -38,7 +38,8 @@ namespace LeetCode
             #endregion
 
             #region number07
-            Console.WriteLine(number07ReverseInteger.Reverse(597));
+            number07ReverseInteger.Reverse2(12345);
+            Console.ReadLine();
             #endregion
         }
     }

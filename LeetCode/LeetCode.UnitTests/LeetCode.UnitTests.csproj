@@ -56,6 +56,7 @@
   <ItemGroup>
     <Compile Include="Easy\number01TwoSum.cs" />
     <Compile Include="Easy\number28ImplementstrStrTests.cs" />
+    <Compile Include="number07ReverseIntegerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
