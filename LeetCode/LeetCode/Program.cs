@@ -11,6 +11,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
+            int[] nums = new int[15] { 2, 3,65,853,446,210,774,3,4,77,23,87,333,121,111 };
+
             #region number28
             /*
             try
@@ -38,9 +40,14 @@ namespace LeetCode
             #endregion
 
             #region number07
-            number07ReverseInteger.Reverse2(12345);
-            Console.ReadLine();
+            //number07ReverseInteger.Reverse2(12345);
             #endregion
+
+            #region number53
+            number53MaximumSubarray.MaxSubarray(nums);
+            #endregion
+
+            Console.ReadLine();
         }
     }
 }
