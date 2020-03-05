@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 using LeetCode.Easy;
 
 namespace LeetCode
@@ -11,7 +12,9 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            int[] nums = new int[15] { 2, 3,65,853,446,210,774,3,4,77,23,87,333,121,111 };
+            int[] nums = new int[15] { 2, 3,65,401,446,-210,-774,3,4,-77,-23,87,333,121,111 };
+            Random randNum = new Random();
+            int[] numsRandom = Enumerable.Repeat(0, 5000000).Select(i =>randNum.Next(-100,100)).ToArray();
 
             #region number28
             /*
@@ -44,9 +47,23 @@ namespace LeetCode
             #endregion
 
             #region number53
-            number53MaximumSubarray.MaxSubarray(nums);
+            var watch = new Stopwatch();
+            watch.Start();
+            var maxSubArrayDivideAndConquer = number53MaximumSubArray.MaxSubArrayDivideAndConquer(numsRandom);
+            Console.WriteLine(watch.Elapsed);
+            watch.Restart();
+            var maxSubArrayGreedy = number53MaximumSubArray.MaxSubArrayGreedy(numsRandom);
+            Console.WriteLine(watch.Elapsed);
+            watch.Restart();
+            var maxSubArrayDynamicProgramming = number53MaximumSubArray.MaxSubArrayDynamicProgramming(numsRandom);
+            Console.WriteLine(watch.Elapsed);
+            watch.Restart();
+            watch.Stop();
             #endregion
-
+            
+            Console.WriteLine(maxSubArrayGreedy);
+            Console.WriteLine(maxSubArrayDivideAndConquer); 
+            Console.WriteLine(maxSubArrayDynamicProgramming);
             Console.ReadLine();
         }
     }
