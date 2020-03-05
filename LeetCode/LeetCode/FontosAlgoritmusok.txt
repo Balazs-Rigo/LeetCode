@@ -1,0 +1,3 @@
+﻿Divide and Conquer
+Greedy
+Dynamic Programming (Kadane's algorithm)
