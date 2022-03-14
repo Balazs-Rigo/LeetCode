@@ -12,7 +12,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            int[] nums = new int[15] { 2, 3,65,401,446,-210,-774,3,4,-77,-23,87,333,121,111 };
+            //int[] nums = new int[15] { 2, 3,65,401,446,-210,-774,3,4,-77,-23,87,333,121,111 };
+            int[] nums = new int[] {0,1};
             Random randNum = new Random();
             int[] numsRandom = Enumerable.Repeat(0, 5000000).Select(i =>randNum.Next(-100,100)).ToArray();
 
@@ -60,10 +61,26 @@ namespace LeetCode
             watch.Restart();
             watch.Stop();
             #endregion
-            
-            Console.WriteLine(maxSubArrayGreedy);
-            Console.WriteLine(maxSubArrayDivideAndConquer); 
-            Console.WriteLine(maxSubArrayDynamicProgramming);
+
+            #region number268
+
+            //int missingNumber = number268MissingNumber.MissingNumber4(nums);
+
+            //Console.WriteLine("missing number: "+missingNumber);
+
+            #endregion
+
+            #region number1929
+
+            number1929ConcatenationOfArray.GetConcatenation(nums);
+
+            #endregion
+
+
+
+            //Console.WriteLine(maxSubArrayGreedy);
+            //Console.WriteLine(maxSubArrayDivideAndConquer); 
+            //Console.WriteLine(maxSubArrayDynamicProgramming);
             Console.ReadLine();
         }
     }
