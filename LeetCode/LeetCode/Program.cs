@@ -118,13 +118,21 @@ namespace LeetCode
             //    Console.WriteLine(item.ToString());
             //}
             //********************************************************
-            ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(9, null)));
-            ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4, new ListNode(9,null))));
+            //ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(9, null)));
+            //ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4, new ListNode(9,null))));
 
-            ListNode l3 = new ListNode(2,null);
-            ListNode l4 = new ListNode(1, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, null))))))))));
+            //ListNode l3 = new ListNode(2,null);
+            //ListNode l4 = new ListNode(1, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, null))))))))));
 
-            ListNode sum = Number02AddTwoNumbers.AddTwoNumbers(l3, l4);
+            //ListNode sum = Number02AddTwoNumbers.AddTwoNumbers(l3, l4);
+
+            #endregion
+
+            #region 442 find duplicates
+
+            int[] numbers = new int[] { 1,2,3,4,2,3};
+
+            var duplicates = Number442FindAllDuplicatesInAnArray.FindDuplicates(numbers);
 
             #endregion
 
