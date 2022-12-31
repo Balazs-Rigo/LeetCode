@@ -103,8 +103,29 @@ namespace LeetCode
 
             #region number03
 
-            int longestSubString = number03LongestSubStringWithoutRepeatingCharacters.LongestSubString("dvdf");
-            Console.WriteLine(longestSubString);
+            //int longestSubString = number03LongestSubStringWithoutRepeatingCharacters.LongestSubString("dvdf");
+            //Console.WriteLine(longestSubString);
+            #endregion
+
+            #region number02
+            //List<int> list1 = new List<int> { 1,1,1};
+            //List<int> list2 = new List<int> { 1, 1, 1 };
+
+            //List<int> list3 = Number02AddTwoNumbers.AddTwoNumbers(list1,list2);
+
+            //foreach (var item in list3)
+            //{
+            //    Console.WriteLine(item.ToString());
+            //}
+            //********************************************************
+            ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(9, null)));
+            ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4, new ListNode(9,null))));
+
+            ListNode l3 = new ListNode(2,null);
+            ListNode l4 = new ListNode(1, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, null))))))))));
+
+            ListNode sum = Number02AddTwoNumbers.AddTwoNumbers(l3, l4);
+
             #endregion
 
 
