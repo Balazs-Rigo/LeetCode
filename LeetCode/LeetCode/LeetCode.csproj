@@ -52,6 +52,7 @@
     <Compile Include="Easy\number268MissingNumber.cs" />
     <Compile Include="Easy\number28ImplementstrStr.cs" />
     <Compile Include="Easy\number53MaximumSubArray.cs" />
+    <Compile Include="Medium\number03LongestSubStringWithoutRepeatingCharacters.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using LeetCode.Easy;
+using LeetCode.Medium;
 
 namespace LeetCode
 {
@@ -54,18 +55,18 @@ namespace LeetCode
             #endregion
 
             #region number53
-            var watch = new Stopwatch();
-            watch.Start();
-            var maxSubArrayDivideAndConquer = number53MaximumSubArray.MaxSubArrayDivideAndConquer(numsRandom);
-            Console.WriteLine(watch.Elapsed);
-            watch.Restart();
-            var maxSubArrayGreedy = number53MaximumSubArray.MaxSubArrayGreedy(numsRandom);
-            Console.WriteLine(watch.Elapsed);
-            watch.Restart();
-            var maxSubArrayDynamicProgramming = number53MaximumSubArray.MaxSubArrayDynamicProgramming(numsRandom);
-            Console.WriteLine(watch.Elapsed);
-            watch.Restart();
-            watch.Stop();
+            //var watch = new Stopwatch();
+            //watch.Start();
+            //var maxSubArrayDivideAndConquer = number53MaximumSubArray.MaxSubArrayDivideAndConquer(numsRandom);
+            //Console.WriteLine(watch.Elapsed);
+            //watch.Restart();
+            //var maxSubArrayGreedy = number53MaximumSubArray.MaxSubArrayGreedy(numsRandom);
+            //Console.WriteLine(watch.Elapsed);
+            //watch.Restart();
+            //var maxSubArrayDynamicProgramming = number53MaximumSubArray.MaxSubArrayDynamicProgramming(numsRandom);
+            //Console.WriteLine(watch.Elapsed);
+            //watch.Restart();
+            //watch.Stop();
             #endregion
 
             #region number268
@@ -98,6 +99,12 @@ namespace LeetCode
 
             number1672RichestCustomerWealth.MaximumWealth(arraysOfNums);
 
+            #endregion
+
+            #region number03
+
+            int longestSubString = number03LongestSubStringWithoutRepeatingCharacters.LongestSubString("dvdf");
+            Console.WriteLine(longestSubString);
             #endregion
 
 
