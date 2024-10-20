@@ -13,16 +13,19 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
+            #region nemtommi
             //int[] nums = new int[15] { 2, 3,65,401,446,-210,-774,3,4,-77,-23,87,333,121,111 };
-            int[] nums = new int[] {1,2,3,4};
-            string[] numString = new string[] {"--X","++X","++X","++X","--XX"};
-            int[][] arraysOfNums = new int[][] {
-                                                    new int[] { 1, 3, 5, 7, 9 },
-                                                    new int[] { 0, 2, 4, 6 },
-                                                    new int[] { 11, 22 }
-                                                    };
-            Random randNum = new Random();
-            int[] numsRandom = Enumerable.Repeat(0, 5000000).Select(i =>randNum.Next(-100,100)).ToArray();
+            //int[] nums = new int[] {1,2,3,4};
+            //string[] numString = new string[] {"--X","++X","++X","++X","--XX"};
+            //int[][] arraysOfNums = new int[][] {
+            //                                        new int[] { 1, 3, 5, 7, 9 },
+            //                                        new int[] { 0, 2, 4, 6 },
+            //                                        new int[] { 11, 22 }
+            //                                        };
+            //Random randNum = new Random();
+            //int[] numsRandom = Enumerable.Repeat(0, 5000000).Select(i =>randNum.Next(-100,100)).ToArray();
+
+            #endregion
 
             #region number28
             /*
@@ -79,7 +82,7 @@ namespace LeetCode
 
             #region number1929
 
-            number1929ConcatenationOfArray.GetConcatenation(nums);
+            //number1929ConcatenationOfArray.GetConcatenation(nums);
 
             #endregion
 
@@ -97,7 +100,7 @@ namespace LeetCode
 
             #region number1672
 
-            number1672RichestCustomerWealth.MaximumWealth(arraysOfNums);
+            //number1672RichestCustomerWealth.MaximumWealth(arraysOfNums);
 
             #endregion
 
@@ -130,16 +133,18 @@ namespace LeetCode
 
             #region 442 find duplicates
 
-            int[] numbers = new int[] { 1,2,3,4,2,3};
+            //int[] numbers = new int[] { 1,2,3,4,2,3};
 
-            var duplicates = Number442FindAllDuplicatesInAnArray.FindDuplicates(numbers);
+            //var duplicates = Number442FindAllDuplicatesInAnArray.FindDuplicates(numbers);
 
             #endregion
 
+            #region number139
 
-            //Console.WriteLine(maxSubArrayGreedy);
-            //Console.WriteLine(maxSubArrayDivideAndConquer); 
-            //Console.WriteLine(maxSubArrayDynamicProgramming);
+            var result = number139WordBreak.WordBreak("ccaccc", new List<string> { "cc", "ac" });
+
+            #endregion
+
             Console.ReadLine();
         }
     }
